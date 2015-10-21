@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.nidajosh\.com [nc]
+RewriteRule (.*) http://nidajosh.com/$1 [R=301,L]
+RewriteRule ^([^\.]+)$ $1.htm [NC,L]
